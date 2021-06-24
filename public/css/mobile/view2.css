@@ -1,0 +1,60 @@
+.view-2 {
+  width: 100%;
+  height: 100%;
+}
+
+.view-2 > :nth-child(1) {
+  position: relative;
+  height: 50%;
+  background: #03256c;
+  overflow: hidden;
+}
+
+.view-2 > :nth-child(1) > img {
+  position: absolute;
+  width: 180px;
+  height: auto;
+}
+
+.view-2 > :nth-child(1) > :nth-child(1) {
+  left: 10px;
+  bottom: -30px;
+}
+
+.view-2 > :nth-child(1) > :nth-child(2) {
+  right: 10px;
+  top: -30px;
+}
+
+.view-2 > :nth-child(2) {
+  height: 50%;
+  padding: 0 20px;
+  background: linear-gradient(-45deg, rgb(118, 39, 221), rgb(214, 53, 206));
+  color: white;
+}
+
+.view-2 > :nth-child(2) > h1 {
+  font-size: 28px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.view-2 > :nth-child(2) > p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.view-2 > :nth-child(2) > div {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.view-2 > :nth-child(2) > div > button {
+  padding: 10px 15px;
+  border-radius: 20px;
+  background: rgb(240, 16, 165);
+  font-size: 16px;
+  font-weight: 500;
+  color: white;
+  margin-left: 10px;
+}

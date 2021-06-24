@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap");
+@import url("./helper.css");
+@import url("./slider.css");
+@import url("./scrollbar.css");
+
+/* slide 2  */
+@import url("./slide2/page1.css");
+@import url("./slide2/page2.css");
+@import url("./slide2/page3.css");
+@import url("./slide2/page4.css");
+@import url("./slide2/page5.css");
+@import url("./slide2/page6.css");
+@import url("./slide2/page7.css");
+
+/* slide 3 */
+@import url("./slide3.css");
+
+/* mobile */
+@import url("./mobile/mobile.css");
+
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+  offset-position: top;
+}
+
+*,
+*::before,
+*::after {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: inherit;
+}
+
+body {
+  font-weight: 300;
+  line-height: 1.3;
+  color: white;
+}
+
+button {
+  background: transparent;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.slide {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.slide-1 {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100vh;
+  background: rebeccapurple;
+  transition: all 400ms ease-in-out;
+}
+
+.slide-2 {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 50%;
+  width: 50%;
+  height: 100vh;
+  background: white;
+}
+
+@media screen and (max-width: 950px) {
+  .hide-for-mobile {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 950px) {
+  .hide-for-desktop {
+    display: none;
+  }
+}

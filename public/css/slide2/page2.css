@@ -1,0 +1,52 @@
+.slide2-page2 {
+  position: relative;
+  height: 100vh;
+  background: #03256c;
+}
+
+.img-veme {
+  width: 250px;
+  height: auto;
+  position: absolute;
+  opacity: 0;
+}
+
+.img-veme-1 {
+  bottom: -500px;
+  left: 13%;
+}
+
+.img-veme-2 {
+  top: -500px;
+  right: 13%;
+}
+
+@keyframes veme-pop-up {
+  from {
+    bottom: -500px;
+    opacity: 0;
+  }
+  to {
+    bottom: -50px;
+    opacity: 1;
+  }
+}
+
+.veme-pop-up {
+  animation: veme-pop-up 350ms ease-in-out forwards;
+}
+
+@keyframes veme-drop-down {
+  from {
+    top: -500px;
+    opacity: 0;
+  }
+  to {
+    top: -50px;
+    opacity: 1;
+  }
+}
+
+.veme-drop-down {
+  animation: veme-drop-down 350ms ease-in-out forwards;
+}

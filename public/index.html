@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Slider</title>
+  </head>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <link rel="stylesheet" href="./css/main.css" />
+  <body>
+    <noscript>You need to enable JavaScript to run this website.</noscript>
+    <section class="slide hide-for-mobile">
+      <svg
+        version="1.1"
+        id="transring"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        x="0px"
+        y="0px"
+        viewBox="0 0 414 414"
+        style="enable-background: new 0 0 414 414"
+        xml:space="preserve"
+      >
+        <path
+          id="Transparent_Ring"
+          class="transrg"
+          style="
+            opacity: 0.4;
+            fill: none;
+            stroke: #ffffff;
+            stroke-width: 2;
+            stroke-miterlimit: 10;
+            enable-background: new;
+          "
+          d="M84.2,85c31.3-31.5,74.7-51,122.7-51c95.5,0,173,77.5,173,173s-77.5,173-173,173
+        c-47.8,0-91-19.4-122.3-50.7"
+        ></path>
+        <path
+          id="Opaque_Ring"
+          class="transrgwht"
+          stroke-dasharray="0,1000"
+          style="
+            fill: none;
+            stroke: rgb(255, 255, 255);
+            stroke-width: 2;
+            stroke-miterlimit: 10;
+            stroke-dasharray: 10, 1000;
+          "
+          d="M84.2,85c31.3-31.5,74.7-51,122.7-51c95.5,0,173,77.5,173,173s-77.5,173-173,173
+        c-47.8,0-91-19.4-122.3-50.7"
+        ></path>
+        <g id="Dots" class="dots-nav">
+          >
+          <g>
+            <path
+              class="dotsst dotsfill"
+              style="fill: rgb(0, 146, 255); opacity: 1"
+              d="M206.8,29c-3.3,0-6,2.7-6,6s2.7,6,6,6s6-2.7,6-6S210.1,29,206.8,29z M206.8"
+            ></path>
+          </g>
+          <g>
+            <path
+              class="dotsstro"
+              style="
+                opacity: 1;
+                fill: none;
+                stroke: rgb(255, 255, 255);
+                stroke-width: 2;
+                stroke-miterlimit: 10;
+              "
+              d="M206.8,29c-3.3,0-6,2.7-6,6s2.7,6,6,6s6-2.7,6-6S210.1,29,206.8,29z M206.8"
+            ></path>
+          </g>
+        </g>
+        <g id="Dots1" class="dots-nav">
+          <g>
+            <path
+              class="dotsst dotsfill1"
+              style="fill: rgb(255, 255, 255); opacity: 0.4"
+              d="M206.8,29c-3.3,0-6,2.7-6,6s2.7,6,6,6s6-2.7,6-6S210.1,29,206.8,29z M206.8"
+            ></path>
+          </g>
+          <g>
+            <path
+              class="dotsstro1"
+              style="
+                opacity: 0;
+                fill: none;
+                stroke: rgb(255, 255, 255);
+                stroke-width: 2;
+                stroke-miterlimit: 10;
+              "
+              d="M206.8,29c-3.3,0-6,2.7-6,6s2.7,6,6,6s6-2.7,6-6S210.1,29,206.8,29z M206.8"
+            ></path>
+          </g>
+        </g>
+        <g id="Dots2" class="dots-nav">
+          <g>
+            <path
+              class="dotsst dotsfill2"
+              style="fill: rgb(255, 255, 255); opacity: 0.4"
+              d="M206.8,29c-3.3,0-6,2.7-6,6s2.7,6,6,6s6-2.7,6-6S210.1,29,206.8,29z M206.8"
+            ></path>
+          </g>
+          <g>
+            <path
+              class="dotsstro2"
+              style="
+                opacity: 0;
+                fill: none;
+                stroke: rgb(255, 255, 255);
+                stroke-width: 2;
+                stroke-miterlimit: 10;
+              "
+              d="M206.8,29c-3.3,0-6,2.7-6,6s2.7,6,6,6s6-2.7,6-6S210.1,29,206.8,29z M206.8"
+            ></path>
+          </g>
+        </g>
+        <g id="Dots3" class="dots-nav">
+          <g>
+            <path
+              class="dotsst dotsfill3"
+              style="fill: rgb(255, 255, 255); opacity: 0.4"
+              d="M206.8,29c-3.3,0-6,2.7-6,6s2.7,6,6,6s6-2.7,6-6S210.1,29,206.8,29z M206.8"
+            ></path>
+          </g>
+          <g>
+            <path
+              class="dotsstro3"
+              style="
+                opacity: 0;
+                fill: none;
+                stroke: rgb(255, 255, 255);
+                stroke-width: 2;
+                stroke-miterlimit: 10;
+              "
+              d="M206.8,29c-3.3,0-6,2.7-6,6s2.7,6,6,6s6-2.7,6-6S210.1,29,206.8,29z M206.8"
+            ></path>
+          </g>
+        </g>
+        <g id="Dots4" class="dots-nav">
+          <g>
+            <path
+              class="dotsst dotsfill4"
+              style="fill: rgb(255, 255, 255); opacity: 0.4"
+              d="M206.8,29c-3.3,0-6,2.7-6,6s2.7,6,6,6s6-2.7,6-6S210.1,29,206.8,29z M206.8"
+            ></path>
+          </g>
+          <g>
+            <path
+              class="dotsstro4"
+              style="
+                opacity: 0;
+                fill: none;
+                stroke: rgb(255, 255, 255);
+                stroke-width: 2;
+                stroke-miterlimit: 10;
+              "
+              d="M206.8,29c-3.3,0-6,2.7-6,6s2.7,6,6,6s6-2.7,6-6S210.1,29,206.8,29z M206.8"
+            ></path>
+          </g>
+        </g>
+        <g id="Dots5" class="dots-nav">
+          <g>
+            <path
+              class="dotsst dotsfill5"
+              style="fill: rgb(255, 255, 255); opacity: 0.4"
+              d="M206.8,29c-3.3,0-6,2.7-6,6s2.7,6,6,6s6-2.7,6-6S210.1,29,206.8,29z M206.8"
+            ></path>
+          </g>
+          <g>
+            <path
+              class="dotsstro5"
+              style="
+                opacity: 0;
+                fill: none;
+                stroke: rgb(255, 255, 255);
+                stroke-width: 2;
+                stroke-miterlimit: 10;
+              "
+              d="M206.8,29c-3.3,0-6,2.7-6,6s2.7,6,6,6s6-2.7,6-6S210.1,29,206.8,29z M206.8"
+            ></path>
+          </g>
+        </g>
+        <g id="Dots6" class="dots-nav">
+          <g>
+            <path
+              class="dotsst dotsfill6"
+              style="fill: rgb(255, 255, 255); opacity: 0.4"
+              d="M206.8,29c-3.3,0-6,2.7-6,6s2.7,6,6,6s6-2.7,6-6S210.1,29,206.8,29z M206.8"
+            ></path>
+          </g>
+          <g>
+            <path
+              class="dotsstro6"
+              style="
+                opacity: 0;
+                fill: none;
+                stroke: rgb(255, 255, 255);
+                stroke-width: 2;
+                stroke-miterlimit: 10;
+              "
+              d="M206.8,29c-3.3,0-6,2.7-6,6s2.7,6,6,6s6-2.7,6-6S210.1,29,206.8,29z M206.8"
+            ></path>
+          </g>
+        </g>
+      </svg>
+
+      <!-- Slide 1 -->
+      <div class="slide-1"></div>
+
+      <div class="slide3">
+        <div class="inside-ring fade-in">
+          <div class="inside-ring-1">
+            <div class="flow top-31">
+              <h3 class="text-left ml-100px">The Next Big</h3>
+              <h3 class="text-right mr-100px">Powered by advance</h3>
+              <h3 class="text-left ml-100px">Redefining</h3>
+              <h3 class="text-left ml-170px">Text Headline</h3>
+              <h3 class="text-left ml-170px">Developing ERP Solution for</h3>
+              <h3 class="text-right mr-50px">Biggest Classifieds</h3>
+            </div>
+          </div>
+
+          <div class="inside-ring-2">
+            <div class="flow">
+              <h1 class="text-right">25M+ Downloads</h1>
+              <h1 class="text-center">BlockChain</h1>
+              <h1 class="height-71px">
+                <img
+                  class="height-70px float-right"
+                  src="Assets/nasa-mobile-app.png"
+                  alt="nasa"
+                />
+              </h1>
+              <h1 class="text-center">UX Strategy</h1>
+              <h1 class="text-right">Text Headline</h1>
+              <h1 class="text-right">Text Headline</h1>
+              <h1 class="text-right">East Asia</h1>
+            </div>
+          </div>
+
+          <div class="inside-ring-3">
+            <div class="flow">
+              <h3 class="text-right">on appstore & google playstore</h3>
+              <h3 class="text-right mr-100px">Revolution</h3>
+              <h3 class="text-right">algorithms</h3>
+              <h3 class="text-right mr-100px">and UI design</h3>
+              <h3 class="text-right">Footer headline</h3>
+              <h3 class="text-right">in furniture industry</h3>
+              <h3 class="text-right">Countries</h3>
+            </div>
+          </div>
+        </div>
+
+        <img
+          class="slide3-page1-img slide3-page1-img-pop"
+          src="Assets/world-communication-awards-for-best-digital-experience.png"
+          alt="award"
+        />
+
+        <img
+          class="slide3-page7-img slide3-page1-img-pop none"
+          src="Assets/mobile-app-of-the-year-by-entrepreneur.png"
+          alt="award"
+        />
+
+        <div class="slide3-title fade-in">
+          <div class="flow">
+            <h1>ABC 23478</h1>
+            <h1>ABC 678</h1>
+            <h1>ABC 567</h1>
+            <h1>ABC 456</h1>
+            <h1>ABC 345</h1>
+            <h1>ABC 234</h1>
+            <h1>ABC 123</h1>
+          </div>
+        </div>
+
+        <div class="slide3-about fade-in">
+          <div class="line-1">
+            <div class="flow">
+              <p>We are the best web development</p>
+              <p>We are the best web development</p>
+              <p>We are the best</p>
+              <p>We are the best</p>
+              <p>We are the best AR</p>
+              <p>Best since 2017</p>
+              <p>We are the best</p>
+            </div>
+          </div>
+
+          <div class="line-2">
+            <div class="flow">
+              <p>company in the world</p>
+              <p>company in the world</p>
+              <p>Web Development company</p>
+              <p>Web Development company</p>
+              <p>Development company</p>
+              <p>We offer wide range of</p>
+              <p>web development company</p>
+            </div>
+          </div>
+
+          <div class="line-3">
+            <div class="flow">
+              <p class="height-24px"></p>
+              <p class="height-24px"></p>
+              <p>in the world</p>
+              <p>in the world</p>
+              <p>in the world</p>
+              <p>web development and app development.</p>
+              <p>in the world</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide3-btns">
+          <button
+            class="slide3-btn slide3-btn-0 type1 slide3-btn-type1-pop block"
+          >
+            View Case Study ➡
+          </button>
+          <button
+            class="slide3-btn slide3-btn-1 type2 slide3-btn-type2-pop none"
+          >
+            Coming Soon
+          </button>
+          <button
+            class="slide3-btn slide3-btn-2 type1 slide3-btn-type1-pop none"
+          >
+            View Case Study ➡
+          </button>
+          <button
+            class="slide3-btn slide3-btn-3 type1 slide3-btn-type1-pop none"
+          >
+            View Case Study ➡
+          </button>
+          <button
+            class="slide3-btn slide3-btn-4 type1 slide3-btn-type1-pop none"
+          >
+            View Case Study ➡
+          </button>
+          <button
+            class="slide3-btn slide3-btn-5 type2 slide3-btn-type2-pop none"
+          >
+            Coming Soon
+          </button>
+          <button
+            class="slide3-btn slide3-btn-6 type1 slide3-btn-type1-pop none"
+          >
+            View Case Study ➡
+          </button>
+        </div>
+
+        <button class="slide3-button3 slide3-button3-pop">SKIP</button>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="slide-2">
+        <div class="slide2-page1 block">
+          <img
+            class="img-nexgtv img-nexgtv-1 nexgtv-drop-down"
+            src="Assets/nexgtv-entertainment-mobile-app-development.png"
+            alt="nexgtv"
+          />
+          <img
+            class="img-nexgtv img-nexgtv-2 nexgtv-pop-up"
+            src="Assets/nexgtv-mobile-app-ui-design.png"
+            alt="nexgtv"
+          />
+        </div>
+        <div class="slide2-page2 none">
+          <img
+            class="img-veme img-veme-1 veme-pop-up"
+            src="Assets/veme-blockchain-app-developed.png"
+            alt="veme"
+          />
+          <img
+            class="img-veme img-veme-2 veme-drop-down"
+            src="Assets/veme-app-ui-design.png"
+            alt="veme"
+          />
+        </div>
+        <div class="slide2-page3 none">
+          <img
+            class="img-fitness img-fitness-1 fitness-pop-up"
+            src="Assets/nasa-fitness-tracking-mobile-app.png"
+            alt="fitness"
+          />
+          <img
+            class="img-fitness img-fitness-2 fitness-drop-down"
+            src="Assets/measure-total-body-weight-through-fitness-app.png"
+            alt="fitness"
+          />
+        </div>
+        <div class="slide2-page4 none">
+          <img
+            class="img-pizza img-pizza-1 pizza-pop-up"
+            src="Assets/domi-img1.png"
+            alt="pizza"
+          />
+          <img
+            class="img-pizza img-pizza-2 pizza-drop-down"
+            src="Assets/ux-strategy-for-mobile-app-devlopment.png"
+            alt="pizza"
+          />
+          <img
+            class="img-pizza img-pizza-3 pizza-slide-left"
+            src="Assets/pizza_box.png"
+            alt="pizza"
+          />
+          <img
+            class="img-pizza img-pizza-4 pizza-slide-right"
+            src="Assets/dominos-bread.png"
+            alt="pizza"
+          />
+          <img
+            class="img-pizza img-pizza-5 pizza-slide-right"
+            src="Assets/dominos-bread1.png"
+            alt="pizza"
+          />
+        </div>
+        <div class="slide2-page5 none">
+          <img
+            class="img-social img-social-1 social-drop-down-1"
+            src="Assets/karavan-social-networking-app-screen.png"
+            alt="social"
+          />
+          <img
+            class="img-social img-social-2 social-drop-down-2"
+            src="Assets/social-networking-app-case-study.png"
+            alt="social"
+          />
+          <img
+            class="img-social img-social-3 social-pop-up-1"
+            src="Assets/karavan_2.png"
+            alt="social"
+          />
+          <img
+            class="img-social img-social-4 social-pop-up-2"
+            src="Assets/karavan-social-networking-app-screen-2.png"
+            alt="social"
+          />
+          <img
+            class="img-social img-social-5 social-slide-right"
+            src="Assets/developers-for-social-media-app.png"
+            alt="social"
+          />
+        </div>
+        <div class="slide2-page6 none">
+          <img
+            class="img-home home-pop-up"
+            src="Assets/erp-app-development-service.png"
+            alt="home"
+          />
+        </div>
+        <div class="slide2-page7 none">
+          <img
+            class="img-mell img-mell-1 mell-pop-up-1"
+            src="Assets/melltoo-img1.png"
+            alt="melltoo"
+          />
+          <img
+            class="img-mell img-mell-2 mell-pop-up-2"
+            src="Assets/melltoo-img2.png"
+            alt="melltoo"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="mobile-view hide-for-desktop">
+      <div class="owl-carousel owl-theme owl-loaded">
+        <div class="owl-stage-outer">
+          <div class="owl-stage">
+            <div class="owl-item">
+              <div class="view-1">
+                <div class="flex flex-jc-c flex-ai-c">
+                  <img
+                    src="Assets/nexgtv-entertainment-mobile-app-development.png"
+                  />
+                  <img src="Assets/nexgtv-mobile-app-ui-design.png" />
+                </div>
+                <div>
+                  <img
+                    src="Assets/mobile-app-of-the-year-by-entrepreneur.png"
+                  />
+                  <div>
+                    <h1>ABC 123</h1>
+                    <p>
+                      This is sample text for abc. This is sample text for abc
+                    </p>
+                    <button>View Case Study ➡</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="owl-item">
+              <div class="view-2">
+                <div>
+                  <img src="Assets/veme-blockchain-app-developed.png" />
+                  <img src="Assets/veme-app-ui-design.png" />
+                </div>
+                <div class="flex flex-col flex-jc-c">
+                  <h1>ABC 1</h1>
+                  <p>This is sample text for abc 1.</p>
+                  <div>Case Study ➡<button>Coming Soon</button></div>
+                </div>
+              </div>
+            </div>
+            <div class="owl-item">
+              <div class="view-3">
+                <div>
+                  <img src="Assets/nasa-fitness-tracking-mobile-app.png" />
+                  <img
+                    src="Assets/measure-total-body-weight-through-fitness-app.png"
+                  />
+                </div>
+                <div class="flex flex-col flex-jc-c">
+                  <h1>ABC 2</h1>
+                  <p>This is sample text for ABC 2</p>
+                  <div>Case Study ➡<button>Coming Soon</button></div>
+                </div>
+              </div>
+            </div>
+            <div class="owl-item">
+              <div class="view-4">
+                <div>
+                  <img class="view-4-img-1" src="Assets/pizza_box.png" />
+                  <img class="view-4-img-2" src="Assets/dominos-bread.png" />
+                  <img class="view-4-img-3" src="Assets/dominos-bread1.png" />
+                  <img class="view-4-img-4" src="Assets/domi-img1.png" />
+                  <img
+                    class="view-4-img-5"
+                    src="Assets/ux-strategy-for-mobile-app-devlopment.png"
+                  />
+                  <img
+                    class="view-4-img-6"
+                    src="Assets/on-demand-app-development-company.png"
+                  />
+                </div>
+                <div class="flex flex-col flex-jc-c">
+                  <h1>ABC 3</h1>
+                  <p>This is sample text for ABC 3</p>
+                  <div>View Case Study ➡</div>
+                </div>
+              </div>
+            </div>
+            <div class="owl-item">
+              <div class="view-5">
+                <div>
+                  <img
+                    class="view-5-img-1"
+                    src="Assets/karavan-social-networking-app-screen.png"
+                  />
+                  <img class="view-5-img-2" src="Assets/karavan_2.png" />
+                  <img
+                    class="view-5-img-3"
+                    src="Assets/social-networking-app-case-study.png"
+                  />
+                  <img
+                    class="view-5-img-4"
+                    src="Assets/karavan-social-networking-app-screen-2.png"
+                  />
+                  <img
+                    class="view-5-img-5"
+                    src="Assets/developers-for-social-media-app.png"
+                  />
+                </div>
+                <div class="flex flex-col flex-jc-c">
+                  <h1>ABC 4</h1>
+                  <p>This is sample text for ABC 4</p>
+                  <div>View Case Study ➡</div>
+                </div>
+              </div>
+            </div>
+            <div class="owl-item">
+              <div class="view-6">
+                <div>
+                  <img src="Assets/erp-app-development-service.png" />
+                </div>
+                <div class="flex flex-col flex-jc-c">
+                  <h1>ABC 5</h1>
+                  <p>This is sample text for ABC 5</p>
+                  <div>View Case Study ➡</div>
+                </div>
+              </div>
+            </div>
+            <div class="owl-item">
+              <div class="view-7">
+                <div>
+                  <img class="view-7-img-2" src="Assets/melltoo-img1.png" />
+                  <img class="view-7-img-1" src="Assets/melltoo-img2.png" />
+                </div>
+                <div class="flex flex-col flex-jc-c">
+                  <img
+                    class="view-7-img-3"
+                    src="Assets/mobile-app-of-the-year-by-entrepreneur.png"
+                  />
+                  <h1>XYZ 123</h1>
+                  <p>This is sample text for XYZ 123</p>
+                  <div>Case Study ➡<button>Coming Soon</button></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"
+      integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/debug.addIndicators.min.js"
+      integrity="sha512-RvUydNGlqYJapy0t4AH8hDv/It+zKsv4wOQGb+iOnEfa6NnF2fzjXgRy+FDjSpMfC3sjokNUzsfYZaZ8QAwIxg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.min.js"
+      integrity="sha512-5/OHwmQzDSBS0Ous4/hlYoWLHd06/d2r7LdKZQVBXOA6PvOqWVXtdboiLTU7lQTGyVoKVTNkwi0ol4gHGlw5ww=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenLite.min.js"
+      integrity="sha512-5nTpER5HrSoRPyd8szIn2QglL3A54KJs4XOcX3SdHTbLb8TO/5wLqoFYSFGNyhzZy7CFAOZf66X3ikr2v7Bfuw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineLite.min.js"
+      integrity="sha512-UznfQR3LKkKPL0k7HISMqOsmUCjVhjWK8HlR0Pxo5JpjN8eZ8XRwKBRX6OTOQIO0FYOl8Oue+4dG4uHtx1SgKQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/plugins/CSSPlugin.min.js"
+      integrity="sha512-Xc+rcY3w0DANwcFGWBcnBf2dw/p5a4IBAKqHdBJScNOnIH+qoQYE6xuWEdW3wiP7Q+XvL9MacrnKkzoP0Kexug=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/plugins/BezierPlugin.min.js"
+      integrity="sha512-H0dUDNDv/uVTWqjYbXjaHb5mILJYXUJ9g36b/Ye/Jt/wk1tVPi8M99AEPbPEBkwL/jysKfLg6sN+kvElcJuESw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./script.js"></script>
+  </body>
+</html>

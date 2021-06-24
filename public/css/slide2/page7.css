@@ -1,0 +1,53 @@
+.slide2-page7 {
+  position: relative;
+  height: 100vh;
+  background: #13b375;
+}
+
+.img-mell {
+  height: auto;
+  position: absolute;
+  opacity: 0;
+}
+
+.img-mell-1 {
+  width: 265px;
+  bottom: -700px;
+  left: calc(20% + 250px);
+}
+
+.img-mell-2 {
+  width: 340px;
+  bottom: -700px;
+  left: 22%;
+}
+
+@keyframes mell-pop-up-1 {
+  from {
+    bottom: -700px;
+    opacity: 0;
+  }
+  to {
+    bottom: -40px;
+    opacity: 1;
+  }
+}
+
+.mell-pop-up-1 {
+  animation: mell-pop-up-1 450ms ease-out forwards;
+}
+
+@keyframes mell-pop-up-2 {
+  from {
+    bottom: -700px;
+    opacity: 0;
+  }
+  to {
+    bottom: -90px;
+    opacity: 1;
+  }
+}
+
+.mell-pop-up-2 {
+  animation: mell-pop-up-2 400ms ease-out forwards;
+}

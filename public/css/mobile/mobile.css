@@ -1,0 +1,36 @@
+@import url("./view1.css");
+@import url("./view2.css");
+@import url("./view3.css");
+@import url("./view4.css");
+@import url("./view5.css");
+@import url("./view6.css");
+@import url("./view7.css");
+
+.mobile-view {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  color: black;
+}
+
+.owl-item {
+  height: 100vh;
+}
+
+.owl-dots {
+  width: 100%;
+  position: absolute;
+  margin: 0 !important;
+  bottom: 0;
+  left: 0;
+}
+
+.owl-dot span {
+  background: grey !important;
+}
+
+.active span {
+  background: white !important;
+}

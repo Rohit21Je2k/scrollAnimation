@@ -1,0 +1,53 @@
+.slide2-page3 {
+  position: relative;
+  height: 100vh;
+  background: #051842;
+}
+
+.img-fitness {
+  height: auto;
+  position: absolute;
+  opacity: 0;
+}
+
+.img-fitness-1 {
+  width: 300px;
+  bottom: -500px;
+  left: 13%;
+}
+
+.img-fitness-2 {
+  width: 250px;
+  top: -500px;
+  right: 13%;
+}
+
+@keyframes fitness-pop-up {
+  from {
+    bottom: -500px;
+    opacity: 0;
+  }
+  to {
+    bottom: calc(50% - 290px);
+    opacity: 1;
+  }
+}
+
+.fitness-pop-up {
+  animation: fitness-pop-up 350ms ease-in-out forwards;
+}
+
+@keyframes fitness-drop-down {
+  from {
+    top: -500px;
+    opacity: 0;
+  }
+  to {
+    top: -100px;
+    opacity: 1;
+  }
+}
+
+.fitness-drop-down {
+  animation: fitness-drop-down 350ms ease-in-out forwards;
+}

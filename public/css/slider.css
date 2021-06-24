@@ -1,0 +1,66 @@
+/* full svg  */
+#transring {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  z-index: 3;
+  top: 80px;
+  left: 48%;
+  transform: translate(-150px);
+  border-radius: 150px;
+  background: rebeccapurple;
+  transition: all 600ms ease-in-out;
+}
+
+/* grey stroke */
+/* .transrg {} */
+
+/* white stroke */
+/* .transrgwht {} */
+
+/* dot outer ring*/
+/* .dotsstro {} */
+
+/* dot inner circle */
+/* .dotsst {} */
+
+.dots-nav {
+  transform-origin: 50% 50%;
+}
+
+#Dots {
+  transform: rotate(-45deg);
+}
+
+#Dots1 {
+  transform: rotate(0deg);
+}
+
+#Dots2 {
+  transform: rotate(45deg);
+}
+
+#Dots3 {
+  transform: rotate(90deg);
+}
+
+#Dots4 {
+  transform: rotate(135deg);
+}
+
+#Dots5 {
+  transform: rotate(180deg);
+}
+
+#Dots6 {
+  transform: rotate(225deg);
+}
+
+.opacity-1 {
+  opacity: 1 !important;
+}
+
+.circle-fill {
+  opacity: 1 !important;
+  fill: rgb(0, 146, 255) !important;
+}

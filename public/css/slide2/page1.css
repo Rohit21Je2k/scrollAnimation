@@ -1,0 +1,52 @@
+.slide2-page1 {
+  position: relative;
+  height: 100vh;
+  background: rgb(207, 206, 206);
+}
+
+.img-nexgtv {
+  width: 300px;
+  height: auto;
+  position: absolute;
+  opacity: 0;
+}
+
+.img-nexgtv-1 {
+  top: -500px;
+  left: 13%;
+}
+
+.img-nexgtv-2 {
+  top: 100vh;
+  right: 13%;
+}
+
+@keyframes nexgtv-drop-down {
+  from {
+    top: -500px;
+    opacity: 0;
+  }
+  to {
+    top: calc(50% - 250px);
+    opacity: 1;
+  }
+}
+
+.nexgtv-drop-down {
+  animation: nexgtv-drop-down 450ms ease-in-out forwards;
+}
+
+@keyframes nexgtv-pop-up {
+  from {
+    top: 100vh;
+    opacity: 0;
+  }
+  to {
+    top: calc(50% - 250px);
+    opacity: 1;
+  }
+}
+
+.nexgtv-pop-up {
+  animation: nexgtv-pop-up 450ms ease-in-out forwards;
+}

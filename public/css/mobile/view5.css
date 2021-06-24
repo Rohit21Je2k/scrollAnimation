@@ -1,0 +1,74 @@
+.view-5 {
+  width: 100%;
+  height: 100%;
+}
+
+.view-5 > :nth-child(1) {
+  position: relative;
+  height: 50%;
+  background: #1bc0d6;
+  overflow: hidden;
+}
+
+.view-5-img-1 {
+  position: absolute;
+  width: 140px !important;
+  height: auto;
+  top: -100px;
+  left: 10px;
+}
+
+.view-5-img-2 {
+  position: absolute;
+  width: 140px !important;
+  height: auto;
+  bottom: -120px;
+  left: 10px;
+}
+
+.view-5-img-3 {
+  position: absolute;
+  width: 150px !important;
+  height: auto;
+  top: calc(50% - 250px);
+  left: calc(50% - 60px);
+}
+
+.view-5-img-4 {
+  position: absolute;
+  width: 140px !important;
+  height: auto;
+  bottom: calc(50% - 300px);
+  left: calc(50% - 60px);
+}
+
+.view-5-img-5 {
+  position: absolute;
+  width: 150px !important;
+  height: auto;
+  bottom: 10px;
+  right: -30px;
+}
+
+.view-5 > :nth-child(2) {
+  height: 50%;
+  padding: 0 20px;
+  background: rgb(5, 79, 216);
+  color: white;
+}
+
+.view-5 > :nth-child(2) > h1 {
+  font-size: 28px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.view-5 > :nth-child(2) > p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.view-5 > :nth-child(2) > div {
+  font-size: 16px;
+  font-weight: 500;
+}
